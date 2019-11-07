@@ -1,3 +1,7 @@
+/* Having a "margin: 0" is a must - Leo */
+ body {
+  margin:0;
+}
 /* Navigation Bar Contents! */  
  .navigation_space {
     position: relative;
