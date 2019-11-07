@@ -1,17 +1,140 @@
-* {
-  margin:0px;
-  padding:0px;
-}
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  /* Please Add "Margin: 0" to body to remove that white border :^) */
+  body {
+    margin: 0 auto;
+  }
+  /* Navigation Bar Content */
+  .navigation_space {
+    position: relative;
+    width: 100%;
+    height: 202px;
+    background-color:#24a4d8;
+    top: 0;
+  }
+  .navigation_space img {
+    position: relative;
+    height:180px;
+  }
+  .navigation_space h1 {
+    position:relative;
+    color:white;
+    float:right;
+    margin:30px;
+    top:50px;
+    transition: all 500ms ease;
+  }
+  .navigation_space h1:hover {
+    position:relative;
+    color:white;
+    float:right;
+    margin:30px;
+    top:50px;
+    padding:15px;
+    border-radius:20px;
+    background-color:blue;
+    transition: all 500ms ease;
+  }
+  /* Footer body */
+  .footer_body {
+    width:100%;
+    height:240px;;
+    position:relative;
+    bottom:0;
+    background-color:grey;
+  }
+  .footer_main {
+    position:relative;
+    float:right;
+    padding:25px;
+    text-align:center;
+  }
+  .footer_main h2 ,.footer_main_newslet h2 {
+    color:#24a4d8;
+    font-size:24px;
+  }
+  .footer_main p {
+    color:#000000;
+    font-size:12px;
+  }
+  .footer_seperator {
+    height:100%;
+    width:5px;
+    position:relative;
+    float:left;
+    background-color:#24a4d8;
+  }
+  .footer_main_newslet {
+    position:relative;
+    float:left;
+    margin:20px;
+    text-align:center;
+  }
+  .footer_main_newslet p {
+    color:black;
+    font-size:12px;
+    margin: 0;
+  }
+  </style>
+  </head>
+  <body>
+  <!-- Navigation Bar-->
+  <div class="navigation_space">
+    <!-- Background -->
+    <!-- Image -->
+    <h1>Register</h1>
+    <h1>About</h1>
+    <h1>Auctions</h1>
+    <h1>Commercial</h1>
+    <h1>Residential</h1>
+    <h1>Home</h1>
+    <img src="../imgs/logo.gif" alt="logo">
+  </div>
 
-#octocat {
-  display: block;
-  width:384px;
-  margin: 50px auto;
-}
+  <!-- THIS DIV IS JUST A PLACEHOLDER - YOU ARE ABLE TO REMOVE IT AND REPLACE IT WITH YOUR OWN CONTENT! -->
+  <div style="height:800px;border:1px solid red"><h1 style="color:red;text-align:center">THIS IS JUST A PLACEHOLDER - YOU ARE ABLE TO REMOVE IT AND REPLACE IT WITH YOUR OWN CONTENT!</h1></div>
+  <!-- ^THIS DIV IS JUST A PLACEHOLDER - YOU ARE ABLE TO REMOVE IT AND REPLACE IT WITH YOUR OWN CONTENT!^ -->
 
-p {
-  display: block;
-  width: 400px;
-  margin: 50px auto;
-  font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
-}
+  <!-- Footer Space -->
+  <div class="footer_body">
+    <div class="footer_main">
+      <h2>Miscellaneous<hr></h2>
+      <p>News</p><p>Blogs</p><p>Advice</p>
+    </div>
+    <div class="footer_main">
+      <h2>Commercial<hr></h2>
+      <p>Buying</p><p>Selling</p><p>Leasing</p>
+    </div>
+    <div class="footer_main">
+      <h2>Auction<hr></h2>
+      <p>Auctions</p><p>Scheduled Auctions</p><p>Auction Sold History</p>
+    </div>
+    <div class="footer_main">
+      <h2>About Us<hr></h2>
+      <p>Team Members</p><p>Company</p><p>Store Locations</p>
+    </div>
+    <div class="footer_main">
+      <h2>Accounts<hr></h2>
+      <p>Login</p><p>Register</p><p>User Account</p>
+    </div>
+    <div class="footer_main">
+      <h2>Residential<hr></h2>
+      <p>Buying</p><p>Selling</p><p>Renting</p>
+    </div>
+    <div class="footer_main_newslet">
+      <h2>Newsletter<hr></h2>
+      <!-- Insert Input Box -->
+      <input type="text" name="footer_main_input" placeholder="Please Enter Your Email"><br><br>
+      <button>
+        <p>Join the Dream Team Newsletter</p>
+        <p>&</p>
+        <p>Find Your Dream Home!</p>
+      </button>
+    </div>
+    <div class="footer_seperator"></div>
+    </div>
+  </div>
+</body>
+</html> 
