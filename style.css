@@ -1,0 +1,319 @@
+
+  *{margin: 0 auto;
+    padding: 0;
+  }
+
+/* Navigation Bar Content */
+.navigation_space {
+  position: relative;
+  width: 100%;
+  height: 202px;
+  background-color:#24a4d8;
+  top: 0;
+}
+.navigation_space img {
+  position: absolute;
+  height:180px;
+}
+.navigation_space h1 {
+  position:relative;
+  color:#fff;
+  float:right;
+  margin:30px;
+  top:50px;
+  transition: all 500ms ease;
+}
+.navigation_space h1:hover {
+  position:relative;
+  color:white;
+  float:right;
+  margin:10px;
+  top:50px;
+  padding:30px;
+  border-radius:20px;
+  background-color:blue;
+  transition: all 500ms ease;
+}
+/* background image for lease page*/
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.bg {
+  /* The image used */
+  background-image: url("images/bg.jpeg");
+  height: 100%;
+  background-position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+
+.show {
+  display: block;
+}
+/* Fillter elements */
+.btn {
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  background-color: #24a4d8;
+  cursor: pointer;
+}
+
+
+.btn.active {
+  background-color: blue;
+  color: white;
+}
+
+/*image in buy page*/
+
+img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-family: cursive;
+
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 8px solid #24a4d8;
+}
+/*dropdown menu*/
+.dropbtn {
+  background-color: #24a4d8;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  float: left;
+}
+
+.dropdown {
+  position: absolute;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: Blue;
+}
+
+/*  Custom select Menu*/
+/*the container must be positioned relative:*/
+.custom-select {
+  position: absolute;
+  font-family: Century Gothic;
+
+
+}
+
+
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+
+.select-selected {
+  background-color: #24a4d8;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+  color: #000000;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: white;
+
+  top: 100%;
+
+  right: 0;
+  z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+/* Coding for Heading and buttons*/
+.title{
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  transform: translate(-70%;-70%);
+}
+.title h2{
+  color:#fff;
+  text-shadow: 3px 3px 6px grey;
+  font-size: 40px;
+}
+.button{
+  position: absolute;
+  top: 80%;
+  left: 30%;
+  transform: translate(-50%;-50%);
+}
+
+.btn{
+  border: 2px solid #24a4d8;
+  padding: 30px 50px;
+  color: #fff;
+  text-decoration: bold;
+  transition: 0.6s ease;
+}
+
+.btn:hover{
+  background-color: blue;
+  color: #fff;
+}
+/* scroll to top*/
+{
+  font-family: Century Gothic;
+  font-size: 20px;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  z-index: 1;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: teal;
+  color: white;
+  cursor: pointer;
+  padding: 1px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: blue;
+}
+
+/* Footer body */
+.footer_body {
+  width:100%;
+  height:240px;;
+  position:relative;
+  bottom:0;
+  background-color:#24a4d8;
+}
+.footer_main {
+  position:relative;
+  float:right;
+  padding:25px;
+  text-align:center;
+}
+.footer_main h2 ,.footer_main_newslet h2 {
+  color:#fff;
+  font-size:24px;
+}
+.footer_main p {
+  color:#fff;
+  font-size:12px;
+}
+.footer_seperator {
+  height:100%;
+  width:5px;
+  position:relative;
+  float:left;
+  background-color:#24a4d8;
+}
+.footer_main_newslet {
+  position:relative;
+  float:left;
+  margin:20px;
+  text-align:center;
+}
+.footer_main_newslet p {
+  color:black;
+  font-size:12px;
+  margin: 0;
+}
+
+social-icons {
+
+  text-align: center;
+  }
+.social-icons li {
+  display:inline-block;
+  list-style-type:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+   float: right;
+  }
+.social-icons li a {
+  border-bottom: none;
+  }
+.social-icons li img {
+  width:50px;
+  height:50px;
+  margin-right: 20px;
+}

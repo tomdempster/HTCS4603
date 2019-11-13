@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Commercial</title>
+<link rel="stylesheet" type="text/css"  href="style.css">
+
+</head>
+<body>
+<!-- Navigation Bar-->
+<div class="navigation_space">
+  <!-- Background -->
+  <!-- Image -->
+  <h1>Register</h1>
+  <h1>About</h1>
+  <h1>Auctions</h1>
+  <h1>Commercial</h1>
+  <h1>Residential</h1>
+  <h1>Home</h1>
+  <img src="images/logo.gif" alt="logo">
+
+</div>
+
+<!--background image-->
+
+<div class="bg"></div>
+
+
+<!--scroll to top-->
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<div style="padding:1px"></div>
+
+<div style="padding:1px">
+  <strong></strong>.</div>
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<!-- Footer Space -->
+  <div class="footer_body">
+    <div class="footer_main">
+      <h2>Miscellaneous<hr></h2>
+      <p>News</p><p>Blogs</p><p>Advice</p>
+    </div>
+    <div class="footer_main">
+      <h2>About Us<hr></h2>
+      <p>Team Members</p><p>Company</p><p>Store Locations</p>
+    </div>
+    <div class="footer_main">
+      <h2>Accounts<hr></h2>
+      <p>Login</p><p>Register</p><p>User Account</p>
+    </div>
+    <div class="footer_main">
+      <h2>Auction<hr></h2>
+      <p>Auctions</p><p>Scheduled Auctions</p><p>Auction Sold History</p>
+    </div>
+    <div class="footer_main">
+      <h2>Commercial<hr></h2>
+      <p>Buying</p><p>Selling</p><p>Leasing</p>
+    </div>
+    <div class="footer_main">
+      <h2>Residential<hr></h2>
+      <p>Buying</p><p>Selling</p><p>Renting</p>
+    </div>
+    <div class="footer_main_newslet">
+      <h2>Newsletter<hr></h2>
+      <!-- Insert Input Box -->
+      <input type="text" name="footer_main_input" placeholder="Please Enter Your Email"><br><br>
+      <button>
+        <p>Join the Dream Team Newsletter</p>
+        <p>&</p>
+        <p>Find Your Dream Home!</p>
+      </button>
+    </div>
+    <div class="footer_seperator"></div>
+    <ul class="social-icons">
+    <li><a href="http://www.facebook.com"><img src='images/fb.jpg' /></a></li>
+    <li><a href="http://www.twitter.com"><img src='images/twitter.jpg' /></a></li>
+    <li><a href="http://www.youtube.com"><img src='images/youtube.jpg' /></a></li>
+    <li><a href="http://www.instagram.com"><img src='images/insta.jpg' /></a></li>
+  </ul>
+    </div>
+  </div>
+
+
+
+
+  </body>
+  </html>

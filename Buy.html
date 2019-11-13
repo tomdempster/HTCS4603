@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Commercial</title>
+<link rel="stylesheet" type="text/css"  href="style.css">
+
+</head>
+<body>
+
+<!-- Navigation Bar-->
+<div class="navigation_space">
+  <!-- Background -->
+  <!-- Image -->
+  <h1>Register</h1>
+  <h1>About</h1>
+  <h1>Auctions</h1>
+  <h1>Commercial</h1>
+  <h1>Residential</h1>
+  <h1>Home</h1>
+  <img src="images/logo.gif" alt="logo">
+</div>
+
+
+
+
+  <!--image-->
+<div class="container">
+    <img src="images/buy.jpeg" alt="buy" style="width:60%;">
+    <div class="centered"><h3>Dream Team Real Estate has a vast portfolio across Auckland for all kinds of different budgets when it comes to commercial real estate.Our department of commercial property sales is here to work around the clock to achieve the result you want, whether it's a buy/sale or lease agreement.</h3>
+    </div>
+</div>
+<!--drop down for property type-->
+<div class="dropdown" style="float:right;">
+  <button class="dropbtn">Property Type</button>
+  <div class="dropdown-content">
+  <a href="#">Commercial Land</a>
+  <a href="#">Office</a>
+  <a href="#">Showroom/Shops</a>
+  </div>
+</div>
+
+
+
+<div class="custom-select" style="width:200px;">
+<select>
+<option value="0">Auckland:</option>
+<option value="1">Auckland City</option>
+<option value="2">Hauraki Gulf Islands</option>
+<option value="3">Franklin</option>
+<option value="4">Manukau City</option>
+<option value="5">North City</option>
+<option value="6">Papakura</option>
+<option value="7">Rodney</option>
+<option value="8">Waiheke Island</option>
+<option value="9">Waitakere City</option>
+<option value="10">Freemansbay</option>
+<option value="11">Auckland CBD</option>
+</select>
+</div>
+<script>
+var x, i, j, selElmnt, a, b, c;
+/*look for any elements with the class "custom-select":*/
+x = document.getElementsByClassName("custom-select");
+for (i = 0; i < x.length; i++) {
+selElmnt = x[i].getElementsByTagName("select")[0];
+/*for each element, create a new DIV that will act as the selected item:*/
+a = document.createElement("DIV");
+a.setAttribute("class", "select-selected");
+a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+x[i].appendChild(a);
+/*for each element, create a new DIV that will contain the option list:*/
+b = document.createElement("DIV");
+b.setAttribute("class", "select-items select-hide");
+for (j = 1; j < selElmnt.length; j++) {
+/*for each option in the original select element,
+create a new DIV that will act as an option item:*/
+c = document.createElement("DIV");
+c.innerHTML = selElmnt.options[j].innerHTML;
+c.addEventListener("click", function(e) {
+    /*when an item is clicked, update the original select box,
+    and the selected item:*/
+    var y, i, k, s, h;
+    s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+    h = this.parentNode.previousSibling;
+    for (i = 0; i < s.length; i++) {
+      if (s.options[i].innerHTML == this.innerHTML) {
+        s.selectedIndex = i;
+        h.innerHTML = this.innerHTML;
+        y = this.parentNode.getElementsByClassName("same-as-selected");
+        for (k = 0; k < y.length; k++) {
+          y[k].removeAttribute("class");
+        }
+        this.setAttribute("class", "same-as-selected");
+        break;
+      }
+    }
+    h.click();
+});
+b.appendChild(c);
+}
+x[i].appendChild(b);
+a.addEventListener("click", function(e) {
+  /*when the select box is clicked, close any other select boxes,
+  and open/close the current select box:*/
+  e.stopPropagation();
+  closeAllSelect(this);
+  this.nextSibling.classList.toggle("select-hide");
+  this.classList.toggle("select-arrow-active");
+});
+}
+function closeAllSelect(elmnt) {
+/*a function that will close all select boxes in the document,
+except the current select box:*/
+var x, y, i, arrNo = [];
+x = document.getElementsByClassName("select-items");
+y = document.getElementsByClassName("select-selected");
+for (i = 0; i < y.length; i++) {
+if (elmnt == y[i]) {
+  arrNo.push(i)
+} else {
+  y[i].classList.remove("select-arrow-active");
+}
+}
+for (i = 0; i < x.length; i++) {
+if (arrNo.indexOf(i)) {
+  x[i].classList.add("select-hide");
+}
+}
+}
+/*if the user clicks anywhere outside the select box,
+then close all select boxes:*/
+document.addEventListener("click", closeAllSelect);
+
+</script>
+
+<!-- Footer Space -->
+  <div class="footer_body">
+    <div class="footer_main">
+      <h2>Miscellaneous<hr></h2>
+      <p>News</p><p>Blogs</p><p>Advice</p>
+    </div>
+    <div class="footer_main">
+      <h2>About Us<hr></h2>
+      <p>Team Members</p><p>Company</p><p>Store Locations</p>
+    </div>
+    <div class="footer_main">
+      <h2>Accounts<hr></h2>
+      <p>Login</p><p>Register</p><p>User Account</p>
+    </div>
+    <div class="footer_main">
+      <h2>Auction<hr></h2>
+      <p>Auctions</p><p>Scheduled Auctions</p><p>Auction Sold History</p>
+    </div>
+    <div class="footer_main">
+      <h2>Commercial<hr></h2>
+      <p>Buying</p><p>Selling</p><p>Leasing</p>
+    </div>
+    <div class="footer_main">
+      <h2>Residential<hr></h2>
+      <p>Buying</p><p>Selling</p><p>Renting</p>
+    </div>
+    <div class="footer_main_newslet">
+      <h2>Newsletter<hr></h2>
+      <!-- Insert Input Box -->
+      <input type="text" name="footer_main_input" placeholder="Please Enter Your Email"><br><br>
+      <button>
+        <p>Join the Dream Team Newsletter</p>
+        <p>&</p>
+        <p>Find Your Dream Home!</p>
+      </button>
+    </div>
+    <div class="footer_seperator"></div>
+    <ul class="social-icons">
+    <li><a href="http://www.facebook.com"><img src='images/facebook.png' /></a></li>
+    <li><a href="http://www.twitter.com"><img src='images/twitter.png' /></a></li>
+    <li><a href="http://www.youtube.com"><img src='images/youtube.png' /></a></li>
+    <li><a href="http://www.instagram.com"><img src='images/instagram.png' /></a></li>
+  </ul>
+    </div>
+  </div>
+
+
+
+</body>
+</html>
