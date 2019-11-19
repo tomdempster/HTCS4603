@@ -2,23 +2,185 @@
     <html>
         <head>
             <title>About Us</title>
+            <link rel="stylesheet" type="text/css" href="main_css.css">
             <style>
-            img {
-                float:left;
-                position: relative;
-            }
+                .about_us_main_contents {
+                    width:80%;
+                    margin:0 auto;
+                    position:relative;
+                    border:1px solid black;
+                    background-color:#156281;
+                    height:420px;
+                }
+                .about_us_main_text {
+                    border:2px solid red;
+                    width:50%;
+                    position:relative;
+                    right:20px;
+                    float:right;
+                    text-align:center;
+                    color:white;
+                }
+                .about_us_main_contents h1{
+                    text-align:center;
+                    position:relative;
+                    color:white;
+                    margin-top:20px;
+                    font-size:42px;
+                    }
+                .about_us_main_contents img {
+                    width:400px;
+                    height:280px;
+                    position:relative;
+                    float:left;
+                    left:20px;
+                    }
+                /* Team Members Contents */
+                .team_members_contents {
+                    border:2px solid green;
+                    height:800px;
+                }
+                .team_members_contents h1 {
+                    color:#24a4d8;
+                    text-align:center;
+                    font-size:42px;
+                }
+                .tm_current_spotlight {
+                    border:1px solid red;
+                    height:430px;
+                    width:480px;
+                    position:relative;
+                    margin-left:auto;
+                    margin-right:auto;
+                }
+                .tm_current {
+                    border:1px solid black;
+                    background-color:#24a4d8;
+                    width:350px;
+                    height:420px;
+                    float:left;
+                }
+                .tm_current_img {
+                    position:relative;
+                    height:320px;
+                    margin-left:10.75%;
+                    top:10px;
+                }
+                .tm_current p {
+                    margin:0;
+                    text-align:center;
+                    font-size:18px;
+                    color:white;
+                }
+                .tm_current img{
+                    height:320px;
+                    width:280px;
+                }
+                .team_members_left_selector,.team_members_right_selector {
+                    height:160px;
+                    width:60px;
+                    text-align:center;
+                    position:relative;
+                    float:left;
+                    margin-top:150px;
+                    transition: all 500ms ease;
+                }
+                .team_members_left_selector:hover,.team_members_right_selector:hover {
+                    border:1px solid #24a4d8;
+                    height:160px;
+                    width:60px;
+                    text-align:center;
+                    position:relative;
+                    float:left;
+                    margin-top:150px;
+                    transition: all 500ms ease;
+                    font-size:42px;
+                    font-weight:bold;
+                }
             </style>
         </head>
         <body>
-            <div>
-                <img src="imgs/stock_housing.jpg" alt="Dream Team Real Estate">
-                <h1>About Us!</h1>
-                <h2>Dream Team Real Estate</h2>
+            <!-- Navigation Bar-->
+            <div class="navigation_space">
+                <h1>Register</h1>
+                <h1>About</h1>
+                <h1>Auctions</h1>
+                <h1>Commercial</h1>
+                <h1>Residential</h1>
+                <h1>Home</h1>
+                <img src="images/logo.gif" alt="logo">
             </div>
-            <div>
-                <div>
-                    
+
+            <!-- Main Page Contents Start -->
+            <!-- Main Company Team Information -->
+            <div class="about_us_main_contents">
+                <h1>Dream Team Real Estate</h1>
+                <br>
+                <img src="images/stock_housing.jpg" alt="Dream Team Real Estate">
+                <div class="about_us_main_text">
+                <h1>About Us</h1>
+                <p>Established in 2019</br>Dream Team Real Estate promises to help you find your perfect home.</p>
+                <p><i>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in quam venenatis, faucibus nisi sit amet, luctus diam. Vestibulum rhoncus, odio sit amet dictum bibendum, nunc ante efficitur purus, id suscipit felis lectus dapibus ipsum. Fusce dapibus nisl ac turpis vulputate semper sit amet vel nulla. Fusce lacinia porttitor leo eleifend luctus. In porttitor neque in tortor maximus, congue volutpat est auctor. Aliquam rhoncus id leo sed blandit. Integer iaculis hendrerit dui, non scelerisque nulla pulvinar vel. Curabitur euismod tortor sit amet luctus lacinia."</i></p>
                 </div>
+            </div>
+            <hr>
+            <!-- Team Member Scroller -->
+            <div class="team_members_contents">
+                <h1>Team Members</h1>
+                <div class="tm_current_spotlight">
+                    <button class="team_members_left_selector">←</button>
+                    <div class="tm_current">
+                        <div class="tm_current_img">
+                        <img src="images/person_1.jpg" alt="its leo">
+                        </div><br>
+                        <p><i>Greg Greggorson</i></p>
+                        <p><i>"Hard working Satanist & Current CEO of Dream Team Real Estate"</i></p>
+                    </div>
+                    <button class="team_members_right_selector">→</button>
+                </div>
+                <div class="tm_standby_left"></div>
+                <div class="tm_standby_right"></div>
+            </div>
+            
+            <hr>
+            <!-- Footer Body Content -->
+            <div class="footer_body">
+                <div class="footer_main">
+                    <h2>Miscellaneous<hr></h2>
+                    <p>News</p><p>Blogs</p><p>Advice</p>
+                    </div>
+                    <div class="footer_main">
+                    <h2>Commercial<hr></h2>
+                    <p>Buying</p><p>Selling</p><p>Leasing</p>
+                    </div>
+                    <div class="footer_main">
+                    <h2>Auction<hr></h2>
+                    <p>Auctions</p><p>Scheduled Auctions</p><p>Auction Sold History</p>
+                    </div>
+                    <div class="footer_main">
+                    <h2>About Us<hr></h2>
+                    <p>Team Members</p><p>Company</p><p>Store Locations</p>
+                    </div>
+                    <div class="footer_main">
+                    <h2>Accounts<hr></h2>
+                    <p>Login</p><p>Register</p><p>User Account</p>
+                </div>
+                <div class="footer_main">
+                    <h2>Residential<hr></h2>
+                    <p>Buying</p><p>Selling</p><p>Renting</p>
+                </div>
+                <div class="footer_main_newslet">
+                    <h2>Newsletter<hr></h2>
+                    <!-- Insert Input Box -->
+                    <input type="text" name="footer_main_input" placeholder="Please Enter Your Email"><br><br>
+                    <button>
+                        <p>Join the Dream Team Newsletter</p>
+                        <p>&</p>
+                        <p>Find Your Dream Home!</p>
+                    </button>
+                </div>
+                <div class="footer_seperator"></div>
+            </div>
             </div>
         </body>
     </html>
